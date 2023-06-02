@@ -27,7 +27,7 @@ const getCharById = async (req, res) => {
 
 
 
-    .then((result) => result.data)
+    // .then((result) => result.x|data)
 // con este método manejo la incertidumbre, en este caso la de éxito (es otra promesa), tiene una callback de parámetro (se puede llamar de cualquier manera, pero es el caso de éxito), retorna la propiedad data de la respuesta positiva, que es lo que pedimos
 .then(({id, name, gender, origin}) => {
     // este segundo método, recibe una callback con otra promesa exitosa (value)
